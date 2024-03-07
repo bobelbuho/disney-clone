@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './Components/Header'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='App'>
-    <h1 className='text-3xl font-bold underline'>
-      hello world !
-    </h1>
+    <div className="">
+      <Header />
     </div>
   )
 }
