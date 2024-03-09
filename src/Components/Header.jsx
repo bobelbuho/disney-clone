@@ -37,12 +37,16 @@ function Header () {
 
     ]
   return (
-    <div className='flex items-center gap-8 '>
+    <div className='flex items-center gap-8 justify-between p-5'>
+      <div className='flex gap-8 items-center'>
         <img src={logo} className='w-[80px]
          md:w-[115px] object-cover' />
          {menu.map((item) =>(
           <Hearderitem name={item.name} Icon={item.icon} />
          ))}
+         </div>
+         <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+         className='w-[40px] rounded-full' />
     </div>
   )
 }
