@@ -42,7 +42,14 @@ function ProductionHouse  () {
         },
     ]
   return (
-    <div className=''>ProductionHouse</div>
+    <div className='flex gap-2 md:gap-5 p-2 px-5 md:px-16 '>
+        {productionHouseList.map((item) => (
+            <div className='border-[2px] border-gray-600 
+            rounded-lg hover:scale-110 transition-all '>
+                <img src={item.image} className='w-full' />
+            </div>
+        ))}
+    </div>
   )
 }
 
